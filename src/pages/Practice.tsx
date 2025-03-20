@@ -1,8 +1,8 @@
 const Practice = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <p className="text-center">Practice</p>
+    </>
   );
 };
 

@@ -1,18 +1,31 @@
-@use "./mixins";
-@use "./variables";
-@use "./reset";
-@use "./common";
+@charset "UTF-8";
+@use "./style" as *;
 
 #header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  padding: 0 1.25rem;
+
+  .maxinner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $headerHeight;
+  }
+
+  .logo a {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
 
   .gnb-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2.5rem;
     text-align: center;
 
     li {
@@ -20,32 +33,24 @@
 
       a {
         display: block;
-        padding: 10px 0;
-        font-size: 15px;
+        padding: .625rem 0;
+        font-size: 1rem;
         font-weight: 700;
-
-        &:hover {
-          background-color: rgba(0,0,0,.4);
-          color: #fff;
-        }
       }
     }
   }
 }
 
-#footer {
-  text-align: center;
-
-  p {
-    font-size: 14px;
-  }
+.page-container {
+  padding-top: $headerHeight;
+  min-height: calc(100vh - $footerHeight);
 }
 
-.max {
+#footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
+  height: $footerHeight;
+  padding: 0 1.25rem;
+  background-color: #eee;
 }
