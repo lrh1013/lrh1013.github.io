@@ -2,3 +2,24 @@
 
 $headerHeight: 80px;
 $footerHeight: 120px;
+
+/**
+ * 색상 지정
+ * 테마 : 다크(기본) | 화이트
+ */
+:root {
+  --theme-primary-color: #fff;
+  --theme-secondary-color: #333;
+  --theme-background-color: #111;
+  --theme-text-color: #fff;
+  --theme-border-color: #444;
+  --theme-footer-background-color: #111;
+}
+[data-theme="light"] {
+  --theme-primary-color: #000;
+  --theme-secondary-color: #fff;
+  --theme-background-color: #fff;
+  --theme-text-color: #000;
+  --theme-border-color: #ccc;
+  --theme-footer-background-color: #eee;
+}

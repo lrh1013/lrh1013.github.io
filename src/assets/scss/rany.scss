@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @use "./style" as *;
 
+body {
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+}
+
 #header {
   position: fixed;
   left: 0;
@@ -52,5 +57,5 @@
   align-items: center;
   height: $footerHeight;
   padding: 0 1.25rem;
-  background-color: #eee;
+  background-color: var(--theme-footer-background-color);
 }
