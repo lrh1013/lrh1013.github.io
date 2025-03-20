@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.project-item {
+  position: relative;
+  width: calc((100% - 2.5rem) / 3);
+  padding-bottom: 32.292%;
+
+  a,
+  .thumb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .details {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 1;
+    width: calc(100% - 2.5rem);
+
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
+
+  .thumb {
+    object-fit: cover;
+  }
+}
+

@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
-import ProjectItem from "@/components/common/ProjectItem";
+import ProjectItem from "@/components/project/ProjectItem";
+import stProject from "@/components/project/project.module.scss";
 
 interface Project {
   id: number;
@@ -29,9 +30,9 @@ const ProjectList = ({ apiPath }: ProjectListProps) => {
   }, [apiPath]);
 
   return (
-    <div>
+    <div className={stProject["project-list"]}>
       {projects.map((project) => (
-        <ProjectItem key={project.id} title={project.title} description={project.description} />
+        <ProjectItem key={project.id} title={project.title} />
       ))}
     </div>
   );

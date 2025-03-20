@@ -1,11 +1,10 @@
-import ProjectList from "@/components/common/ProjectList";
+import ProjectList from "@/components/project/ProjectList";
 
 const Work = () => {
   return (
     <>
       <section>
         <div className="maxinner">
-          <h2 className="h6">Work List</h2>
           <ProjectList apiPath="/api/portfolio" />
         </div>
       </section>

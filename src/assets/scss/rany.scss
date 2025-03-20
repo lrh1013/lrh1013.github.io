@@ -47,7 +47,7 @@ body {
 }
 
 .page-container {
-  padding-top: $headerHeight;
+  padding: calc($headerHeight + 60px) 0;
   min-height: calc(100vh - $footerHeight);
 }
 
