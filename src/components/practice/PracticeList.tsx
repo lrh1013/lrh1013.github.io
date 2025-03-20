@@ -1,6 +1,9 @@
+import ProjectItem from "../common/ProjectItem";
+
 const PracticeList = () => {
   return (
     <>
+      <ProjectItem />
     </>
   );
 };

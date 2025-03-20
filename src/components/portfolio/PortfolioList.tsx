@@ -1,6 +1,9 @@
+import ProjectItem from "../common/ProjectItem";
+
 const PortfolioList = () => {
   return (
     <>
+      <ProjectItem />
     </>
   );
 };
