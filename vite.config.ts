@@ -10,4 +10,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:5001", // MSW 실행될 가짜 주소
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
 })

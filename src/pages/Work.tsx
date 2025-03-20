@@ -1,4 +1,4 @@
-import PortfolioList from "@/components/portfolio/PortfolioList";
+import ProjectList from "@/components/common/ProjectList";
 
 const Work = () => {
   return (
@@ -6,7 +6,7 @@ const Work = () => {
       <section>
         <div className="maxinner">
           <h2 className="h6">Work List</h2>
-          <PortfolioList />
+          <ProjectList apiPath="/api/portfolio" />
         </div>
       </section>
     </>

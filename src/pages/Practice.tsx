@@ -1,16 +1,16 @@
-import PracticeList from "@/components/practice/PracticeList";
+import ProjectList from "@/components/common/ProjectList";
 
-const Work = () => {
+const Practice = () => {
   return (
     <>
       <section>
         <div className="maxinner">
           <h2 className="h6">Practice List</h2>
-          <PracticeList />
+          <ProjectList apiPath="/api/practice" />
         </div>
       </section>
     </>
   );
 };
 
-export default Work;
+export default Practice;

@@ -1,10 +1,14 @@
-const ProjectItem = () => {
+interface ProjectItemProps {
+  title: string;
+  description: string;
+}
+
+const ProjectItem = ({ title, description }: ProjectItemProps) => {
   return (
-    <>
-      <div className="project-item">
-        <p>설명입니다.</p>
-      </div>
-    </>
+    <div className="project-item">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
   );
 };
 
