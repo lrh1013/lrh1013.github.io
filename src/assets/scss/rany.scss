@@ -1,0 +1,51 @@
+@use "./mixins";
+@use "./variables";
+@use "./reset";
+@use "./common";
+
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  .gnb-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    li {
+      flex: 1;
+
+      a {
+        display: block;
+        padding: 10px 0;
+        font-size: 15px;
+        font-weight: 700;
+
+        &:hover {
+          background-color: rgba(0,0,0,.4);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  text-align: center;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.max {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
