@@ -1,0 +1,42 @@
+# node 모듈은 항상 무시
+node_modules/
+
+# 빌드 산출물
+dist/
+build/
+
+# svg 파일 무시
+src/assets/**/*.svg
+
+# 테스트 커버리지
+coverage/
+
+# 정적 자산 (보통 포맷 제외)
+public/
+static/
+
+# 로그 파일
+*.log
+
+# 캐시 및 툴별 생성 디렉토리
+.vite/
+.cache/
+.temp/
+
+# 에디터 설정 (보통 Git에도 무시됨)
+.vscode/
+.idea/
+
+# 패키지 매니저 lock 파일 (필요 시 무시)
+package-lock.json
+
+# 포맷 제외하고 싶은 설정 파일들
+*.config.js
+*.config.cjs
+*.config.mjs
+*.config.ts
+
+# 타입 정의 및 압축 파일
+*.d.ts
+*.min.js
+*.min.css
