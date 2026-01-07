@@ -1,5 +1,4 @@
-/* eslint-disable */
-import React, { useEffect, useRef, useLayoutEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 export interface LiquidEtherProps {
@@ -84,7 +83,7 @@ export default function LiquidEther({
   const isVisibleRef = useRef<boolean>(true);
   const resizeRafRef = useRef<number | null>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!mountRef.current) return;
 
     function makePaletteTexture(stops: string[]): THREE.DataTexture {
@@ -1243,7 +1242,7 @@ export default function LiquidEther({
     <div
       ref={mountRef}
       className={`w-full h-full relative overflow-hidden pointer-events-none touch-none ${className || ''}`}
-      style={{ ...style, backgroundColor: '#000' }}
+      style={style}
     />
   );
 }
